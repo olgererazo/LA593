@@ -36,8 +36,15 @@
   @keyframes bounce { from { height:5px } to { height:28px } }
   .volume-row { display:flex; align-items:center; gap:12px; color:#aaaeb8; margin:14px 4px 24px; }
   .volume-row svg { flex:0 0 20px; }
-  input[type=range] { width:100%; accent-color:var(--gold); cursor:pointer; }
-  .controls { display:flex; align-items:center; justify-content:center; gap:12px; }
+ .controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  max-width: 100%;
+} input[type=range] { width:100%; accent-color:var(--gold); cursor:pointer; }
+   { display:flex; align-items:center; justify-content:center; gap:12px; }
   button { border:1px solid #30333e; color:#e9eaf0; background:linear-gradient(#222530,#171922); width:62px;height:62px; border-radius:50%; cursor:pointer; display:grid;place-items:center; box-shadow:0 6px 15px #0005; transition:transform .12s,filter .12s; }
   button:active { transform:scale(.94) }
   button:hover { filter:brightness(1.18) }
