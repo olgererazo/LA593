@@ -49,6 +49,26 @@
   .status { text-align:center; color:#9ea1ad; font-size:13px; min-height:20px; margin-top:18px; }
   .footer { text-align:center; color:#656975; font-size:11px; margin-top:17px; letter-spacing:.08em; }
   @media(max-width:380px){ .player{padding:18px 16px}.controls{gap:8px}button{width:54px;height:54px}.play{width:94px;height:94px} }
+@media (max-width: 600px) {
+  .player {
+    width: 100% !important;
+    max-width: 430px !important;
+    margin: 0 auto !important;
+  }
+
+  .art {
+    width: 100% !important;
+    height: auto !important;
+    aspect-ratio: 1 / 1 !important;
+    overflow: hidden;
+  }
+
+  .art-logo {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: contain !important;
+  }
+}
 </style>
 </head>
 <body>
